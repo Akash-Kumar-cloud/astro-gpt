@@ -1,0 +1,56 @@
+.sheet-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.sheet-container {
+  background-color: white;
+  width: 100%;
+  max-height: 90vh;
+  border-radius: 16px 16px 0 0;
+  padding: 1rem;
+  overflow-y: auto;
+  animation: slideUp 0.3s ease-out;
+
+  @media (min-width: 769px) {
+    width: 500px;
+    border-radius: 8px;
+    margin-bottom: auto;
+    align-self: center;
+  }
+}
+
+.sheet-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.sheet-drag-indicator {
+  width: 40px;
+  height: 5px;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.sheet-content {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
