@@ -22,7 +22,7 @@ const ChatGPTIntegration = () => {
 
   const openWhatsApp = () => {
     window.open(
-      "https://wa.me/918431776091?text=Hello%21%20I%27m%20interested%20in%20your%20astrology%20consultation.",
+      "https://wa.me/917978789694?text=Hello%21%20I%27m%20interested%20in%20your%20astrology%20consultation.",
       "_blank"
     );
   };
